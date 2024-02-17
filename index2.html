@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/norse" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>THE Odin - Formulário</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <div class="logo">
+                <div class="logo-item">
+                    <img src="./image/odin-lined.png" alt="">
+                </div>
+                <div class="logo-item">
+                    <p>
+                        ODIN
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="photo-cred">
+            Photo by <a href="https://unsplash.com/pt-br/fotografias/planta-da-folha-verde-na-fotografia-de-perto-25xggax4bSA">Svitlana on Unplash</a>
+        </div>
+    </div>
+
+    <main>
+        <div class="title">
+            <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</h1>
+
+            <h2>You know you want to.</h2>
+        </div>
+
+        <form id="my-form">
+            <legend>Let's do this!</legend>
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <div class="input-wrapper">
+                        <div>
+                            <label for="first-name">first name</label>
+                        </div>
+                        <div>
+                            <input type="text" id="first-name" required>
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <div>
+                            <label for="last-name">last name</label>
+                        </div>
+                        <div>
+                            <input type="text" id="last-name" required>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <div class="input-wrapper">
+                        <div>
+                            <label for="event-email">email</label>
+                        </div>
+                        <div>
+                            <input type="email" id="event-email" required>
+                        </div>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <div>
+                            <label for="event-phone">phone number</label>
+                        </div>
+                        <div>
+                            <input type="tel" id="event-phone" required>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <div class="input-wrapper">
+                        <div>
+                            <label for="event-password">password</label>
+                        </div>
+                        <div>
+                            <input type="password" id="event-password" minlength="8" required>
+                        </div>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <div>
+                            <label for="event-password-confirm">confirm password</label>
+                        </div>
+                        <div>
+                            <input type="password" id="event-password-confirm" minlength="8" required>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+        </form>
+
+        <footer>
+            <input 
+                class="button" 
+                type="submit" 
+                form="my-form"
+                value="Create Account">
+        </footer> 
+
+        <div id="already">
+            <p>Already have an account?</p>
+            <a href="#">Log in</a>
+        </div>
+    </main>  
+</body>
+</html>

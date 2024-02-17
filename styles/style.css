@@ -1,0 +1,220 @@
+@import url('https://fonts.cdnfonts.com/css/norse');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    flex: 1 1;
+    background-image: url("image/planta.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgba(8, 8, 8, 0.5);
+    height: 150px;
+    width: 100%;
+
+    margin-top: 150px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    margin: auto;
+
+    /* background-image: url("image/odin-lined.png"); */
+    /* background-size: cover; */
+}
+
+.logo-item img {
+    height: 130px;
+}
+
+.logo p {
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+
+    font-family: 'Norse', sans-serif;
+}
+
+.photo-cred {
+    background-color: #596D48;
+    padding: 6px;
+    text-align: center;
+    color: white;
+}
+
+.photo-cred a {
+    text-decoration: underline;
+}
+
+.photo-cred a:hover {
+    color: rgb(11, 158, 55);
+}
+
+main {
+    flex: 1;
+    background: rgb(243, 243, 243);
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+    padding-left: 2rem;
+
+}
+
+
+.title h1, h2 {
+    line-height: 1.5rem;
+    width: 750px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    font-size: 1.5rem;
+}
+
+.title h2 {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+/* --------------------------- FORMULÁRIO -------------------------------- */
+/* form {
+    margin-top: 1.2rem;
+} */
+
+form fieldset {
+    border: none;
+}
+
+.fieldset-wrapper {
+    display: flex;
+    gap: 50px;
+}
+
+legend { /* form fieldset legend */
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 80px;
+
+    margin-top: 1.5rem;
+}
+
+label {
+    text-transform: uppercase;
+}
+
+.input-wrapper {
+    margin-bottom: 16px;
+}
+
+.input-wrapper label {
+    font-size: 16px;
+    line-height: 20px;
+
+    margin-bottom: 8px;
+}
+
+.input-wrapper input {
+    background: #FAFAFC;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+
+    height: 35px;
+    padding: 0 20px;
+
+    width: 300px;
+
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+/* ------------ FOOTER -----------------*/
+
+footer {
+
+    display: flex;
+    flex-direction: column;
+    padding: 40px 64px;
+
+    margin-bottom: 50px;
+
+    border-top: 1px solid #cfa7a7;
+    border-radius: 0 0 8px 8px;
+}
+
+footer .button {
+    height: 56px;
+    background: #596D48;
+    border: 0;
+    border-radius: 8px;
+
+    font-family: 'Norse', sans-serif;
+
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 26px;
+
+    color: #FFF;
+}
+
+footer .button:hover {
+    background: #35412b;
+    color: #c2c17b;
+}
+
+#already {
+    display: flex;
+}
+
+#already a {
+    margin-left: 5px;
+    color: #596D48;
+}
+
+#already a:hover {
+    text-decoration: underline;
+    color: #c2c17b;
+}
+
+input {
+    border: 2px solid #000;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  input:invalid {
+    border-color: red;
+  }
+  
+  input:valid {
+    border-color: blue;
+  }

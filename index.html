@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/norse" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/theOdin.css" />
+    <script src="main.js" defer></script>
+    <title>THE Odin - Formulário</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="section-one">
+        <div class="logo">
+            <img src="./images/odin-lined.png" alt="logo">
+            <h1>ODIN</h1>
+        </div>
+        <div class="attribution">
+            <p>
+                Photo by
+                <a href="https://unsplash.com/pt-br/fotografias/planta-da-folha-verde-na-fotografia-de-perto-25xggax4bSA" target="_blank">Svitlana on Unplash</a>
+            </p>
+            <p>
+                <a href="https://www.flaticon.com/free-icons/esports" title="esports icons" target="_blank">
+                    Esports icons created by Hilmy Abiyyu A. - Flaticon
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <div class="section-two">
+        <div class="instructions">
+            <p>This is not a real online service! You Can join our community
+                to help you realize your deepest gaming skills.<br>
+                Sign up <em>now</em> to get started.
+            </p>
+            <p>The community is waiting for you.</p>
+        </div>
+
+        <div class="form-div">
+            <!-- <h3>Let's do this!</h3> -->
+            <form action="#" method="post" id="fieldset-wrapper">
+                <!-- qualquer coisa trocar para
+                <div class="input-section"> -->
+                <fieldset class="input-section">
+                    <legend>Let's do this!</legend>
+                    <div class="fieldset-wrapper">
+                        <label for="first-name">first name</label>
+                        <input type="text" id="first-name" name="first_name" placeholder="Enter first name" pattern="[a-zA-Z]+" required>
+                    </div>
+                    <div class="fieldset-wrapper">
+                        <label for="last-name">last name</label>
+                        <input type="text" id="last-name" name="last_name" placeholder="Enter last name" pattern="[a-zA-Z]+" required>
+                    </div>
+
+                    <div class="fieldset-wrapper">
+                        <label for="email">email</label>
+                        <input type="email" id="email" name="user_email" placeholder="example@email.com" pattern="(\w|.)+@\w+\.[a-z]{2,}" required>
+                    </div>
+
+                    <div class="fieldset-wrapper">
+                        <label for="phone">phone number</label>
+                        <input type="tel" id="phone" name="user_phone" placeholder="e.g (99) 9999-9999" 
+                        pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4}" 
+                        required>
+                    </div>
+
+                    <!-- validação telefone
+                    (\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})
+                    
+                    \([0-9]{2}\)[\s][0-9]{4}-[0-9]{4} -->
+
+                    <div class="fieldset-wrapper" id="pwdDiv">
+                        <label for="pwd">password</label>
+                        <input type="password" id="pwd" name="user_password" placeholder="Password" required>
+                    </div>
+
+                    <div class="fieldset-wrapper">
+                        <label for="pwd-confirm">confirm password</label>
+                        <input type="password" id="pwd-confirm" name="password_confirmation" placeholder="Confirm Password" required>
+                    </div>
+                </fieldset>
+
+                <div class="form-submit">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
